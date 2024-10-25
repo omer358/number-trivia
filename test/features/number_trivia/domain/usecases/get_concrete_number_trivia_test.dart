@@ -27,7 +27,7 @@ void main() {
       when(repository.getConcreteNumberTrivia(any))
           .thenAnswer((_) async => Right(numberTrivia));
       // act
-      final result = await useCase.execute(number: tNumber);
+      final result = await useCase(Params(number: tNumber));
       // assert
       expect(result, Right(numberTrivia));
       verify(repository.getConcreteNumberTrivia(tNumber));
@@ -41,7 +41,7 @@ void main() {
       when(repository.getConcreteNumberTrivia(any))
           .thenAnswer((_) async => Left((networkFailure)));
       // act
-      final result = await useCase.execute(number: tNumber);
+      final result = await useCase(Params(number: tNumber));
       // assert
       expect(result, Left(networkFailure));
       verify(repository.getConcreteNumberTrivia(tNumber));
