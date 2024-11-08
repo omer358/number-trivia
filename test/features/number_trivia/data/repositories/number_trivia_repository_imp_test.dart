@@ -15,13 +15,13 @@ import 'number_trivia_repository_imp_test.mocks.dart';
 void main() {
   late NumberTriviaLocalDatasource localDataSource;
   late NumberTriviaRemoteDatasource remoteDataSource;
-  late NetworkInfo networkInfo = MockNetworkInfo();
+  late NetworkInfo networkInfo;
   late NumberTriviaRepositoryImpl repository;
 
   setUp(() {
     localDataSource = MockNumberTriviaLocalDatasource();
     remoteDataSource = MockNumberTriviaRemoteDatasource();
-    // networkInfo = MockNetworkInfo();
+    networkInfo = MockNetworkInfo();
     repository = NumberTriviaRepositoryImpl(
       remoteDataSource: remoteDataSource,
       localDataSource: localDataSource,
