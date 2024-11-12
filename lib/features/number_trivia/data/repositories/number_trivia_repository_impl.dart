@@ -10,7 +10,7 @@ typedef ConcreteOrRandomChooser = Future<NumberTriviaModel>;
 
 class NumberTriviaRepositoryImpl implements NumberTriviaRepository {
   final NumberTriviaRemoteDatasource remoteDataSource;
-  final NumberTriviaLocalDatasource localDataSource;
+  final NumberTriviaLocalDataSource localDataSource;
   final NetworkInfo networkInfo;
 
   const NumberTriviaRepositoryImpl(
