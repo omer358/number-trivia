@@ -10,11 +10,11 @@ import 'package:time_trivira/features/number_trivia/domain/entities/entities.dar
 import 'number_trivia_repository_imp_test.mocks.dart';
 
 @GenerateMocks(
-  [NumberTriviaRemoteDatasource, NumberTriviaLocalDataSource, NetworkInfo],
+  [NumberTriviaRemoteDataSource, NumberTriviaLocalDataSource, NetworkInfo],
 )
 void main() {
   late NumberTriviaLocalDataSource localDataSource;
-  late NumberTriviaRemoteDatasource remoteDataSource;
+  late NumberTriviaRemoteDataSource remoteDataSource;
   late NetworkInfo networkInfo;
   late NumberTriviaRepositoryImpl repository;
 

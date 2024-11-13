@@ -9,7 +9,7 @@ import '../../../../core/core.dart';
 typedef ConcreteOrRandomChooser = Future<NumberTriviaModel>;
 
 class NumberTriviaRepositoryImpl implements NumberTriviaRepository {
-  final NumberTriviaRemoteDatasource remoteDataSource;
+  final NumberTriviaRemoteDataSource remoteDataSource;
   final NumberTriviaLocalDataSource localDataSource;
   final NetworkInfo networkInfo;
 
