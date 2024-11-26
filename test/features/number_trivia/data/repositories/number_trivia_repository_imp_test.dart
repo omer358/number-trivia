@@ -20,7 +20,7 @@ void main() {
 
   setUp(() {
     localDataSource = MockNumberTriviaLocalDataSource();
-    remoteDataSource = MockNumberTriviaRemoteDatasource();
+    remoteDataSource = MockNumberTriviaRemoteDataSource();
     networkInfo = MockNetworkInfo();
     repository = NumberTriviaRepositoryImpl(
       remoteDataSource: remoteDataSource,
