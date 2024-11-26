@@ -21,6 +21,5 @@ class Params extends Equatable {
   Params({required this.number});
 
   @override
-  // TODO: implement props
   List<Object?> get props => [number];
 }
